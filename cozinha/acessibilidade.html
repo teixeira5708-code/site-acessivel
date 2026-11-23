@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Recursos de acessibilidade, atalhos de teclado, padrões seguidos e limitações conhecidas deste site.">
+  <title>Acessibilidade neste site – Cozinha para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="topo" class="atalhos" aria-label="Atalhos de teclado">
+    <ul>
+      <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+      <li><a href="#menu" accesskey="2">Ir para o menu [2]</a></li>
+      <li><a href="#rodape" accesskey="3">Ir para o rodapé [3]</a></li>
+      <li><a href="mapa.html" accesskey="4">Mapa do site [4]</a></li>
+      <li><a href="acessibilidade.html" accesskey="5">Acessibilidade neste site [5]</a></li>
+    </ul>
+  </nav>
+
+  <div class="barra-acessibilidade" role="region" aria-label="Ajustes de leitura">
+    <p>Ajustes de leitura:</p>
+    <button type="button" id="btn-diminuir" aria-label="Diminuir tamanho do texto">A−</button>
+    <button type="button" id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+    <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="btn-espaco" aria-pressed="false">Espaçamento ampliado</button>
+    <button type="button" id="btn-restaurar">Restaurar padrão</button>
+    <span id="status-acess" class="so-leitor" role="status" aria-live="polite"></span>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="index.html">Cozinha para Todos</a>
+    <nav id="menu" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li><a href="cozinha-acessivel.html">Cozinha acessível</a></li>
+        <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a></li>
+        <li><a href="contato.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Acessibilidade neste site</h1>
+    <nav id="sumario" class="sumario" aria-labelledby="sumario-titulo">
+      <h2 id="sumario-titulo">Sumário</h2>
+      <ol>
+        <li><a href="#compromisso">Nosso compromisso</a></li>
+        <li><a href="#atalhos">Atalhos de teclado</a></li>
+        <li><a href="#recursos">Recursos disponíveis</a></li>
+        <li><a href="#limitacoes">Limitações conhecidas</a></li>
+        <li><a href="#relatar">Como relatar um problema</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="compromisso">Nosso compromisso</h2>
+    <p>Este site foi construído seguindo as recomendações <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0, com meta de nível AA, e as do <abbr title="Modelo de Acessibilidade em Governo Eletrônico">eMAG</abbr> 3.1. Ele usa HTML semântico, funciona só com o teclado e foi pensado para leitores de tela.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="atalhos">Atalhos de teclado</h2>
+    <p>As teclas abaixo funcionam em combinação com uma tecla modificadora que varia conforme o navegador: <kbd>Alt</kbd> no Chrome e no Edge (Windows), <kbd>Alt</kbd> + <kbd>Shift</kbd> no Firefox (Windows) e <kbd>Control</kbd> + <kbd>Option</kbd> no Safari e no Chrome (Mac). Os mesmos atalhos aparecem como links no topo de cada página.</p>
+    <div class="tabela-rolavel">
+      <table>
+        <caption>Atalhos de teclado do site</caption>
+        <thead>
+          <tr><th scope="col">Tecla</th><th scope="col">Ação</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">1</th><td>Ir para o conteúdo principal</td></tr>
+          <tr><th scope="row">2</th><td>Ir para o menu</td></tr>
+          <tr><th scope="row">3</th><td>Ir para o rodapé</td></tr>
+          <tr><th scope="row">4</th><td>Abrir o mapa do site</td></tr>
+          <tr><th scope="row">5</th><td>Abrir esta página</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="recursos">Recursos disponíveis</h2>
+    <ul>
+      <li>Navegação completa pelo teclado, com foco sempre visível.</li>
+      <li>Barra de ajustes: aumentar e diminuir o texto, alto contraste e espaçamento ampliado, com as escolhas guardadas no navegador.</li>
+      <li>Cronômetro nas receitas, com aviso na tela, aviso sonoro opcional, vibração e botão para ouvir o tempo restante em leitor de tela.</li>
+      <li>Tradução para Libras com o VLibras.</li>
+      <li>Contraste mínimo de 4,5:1 e fontes sem serifa, sem itálico e sem texto justificado.</li>
+      <li>Imagens com descrição, tabelas com legenda e cabeçalhos, e títulos em ordem hierárquica.</li>
+      <li>Sumário com âncoras nas páginas longas, trilha de navegação nas receitas e <a href="mapa.html">mapa do site</a>.</li>
+      <li>Formulário com rótulos, campos obrigatórios indicados em texto e mensagens de erro anunciadas por leitores de tela.</li>
+      <li>Nenhum vídeo, áudio ou animação inicia sozinho. O aviso sonoro do cronômetro só toca depois que você inicia o cronômetro.</li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="limitacoes">Limitações conhecidas</h2>
+    <ul>
+      <li>O VLibras é carregado de um servidor externo e só funciona com internet.</li>
+      <li>O site é um projeto acadêmico e não passou por auditoria formal com usuários com deficiência. Pode haver falhas que ferramentas automáticas não detectam.</li>
+      <li>O formulário de contato é uma simulação: nenhuma mensagem é enviada a um servidor.</li>
+      <li>As receitas têm finalidade educativa e não substituem orientação de um profissional de saúde ou de um terapeuta ocupacional.</li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="relatar">Como relatar um problema</h2>
+    <p>Encontrou uma barreira? Use o formulário da página <a href="contato.html">Participe</a> e escolha o assunto “Relato de problema de acessibilidade”. Descreva a página, o que aconteceu e, se souber, o navegador e a tecnologia assistiva que você usa.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <p>Cozinha para Todos – projeto acadêmico de desenvolvimento web acessível.</p>
+    <ul>
+      <li><a href="mapa.html">Mapa do site</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="#topo">Voltar ao topo da página</a></li>
+    </ul>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

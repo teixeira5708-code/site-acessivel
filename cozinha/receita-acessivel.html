@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Boas práticas para escrever receitas e páginas de receitas que sejam compreensíveis para todas as pessoas.">
+  <title>Como escrever receitas acessíveis – Cozinha para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="topo" class="atalhos" aria-label="Atalhos de teclado">
+    <ul>
+      <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+      <li><a href="#menu" accesskey="2">Ir para o menu [2]</a></li>
+      <li><a href="#rodape" accesskey="3">Ir para o rodapé [3]</a></li>
+      <li><a href="mapa.html" accesskey="4">Mapa do site [4]</a></li>
+      <li><a href="acessibilidade.html" accesskey="5">Acessibilidade neste site [5]</a></li>
+    </ul>
+  </nav>
+
+  <div class="barra-acessibilidade" role="region" aria-label="Ajustes de leitura">
+    <p>Ajustes de leitura:</p>
+    <button type="button" id="btn-diminuir" aria-label="Diminuir tamanho do texto">A−</button>
+    <button type="button" id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+    <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="btn-espaco" aria-pressed="false">Espaçamento ampliado</button>
+    <button type="button" id="btn-restaurar">Restaurar padrão</button>
+    <span id="status-acess" class="so-leitor" role="status" aria-live="polite"></span>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="index.html">Cozinha para Todos</a>
+    <nav id="menu" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li><a href="cozinha-acessivel.html">Cozinha acessível</a></li>
+        <li><a href="receita-acessivel.html" aria-current="page">Como escrever receitas acessíveis</a></li>
+        <li><a href="contato.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Como escrever receitas acessíveis</h1>
+    <nav id="sumario" class="sumario" aria-labelledby="sumario-titulo">
+      <h2 id="sumario-titulo">Sumário</h2>
+      <ol>
+        <li><a href="#estrutura">Estrutura da página</a></li>
+        <li><a href="#texto">Texto e passos</a></li>
+        <li><a href="#sinais">Sinais de ponto além da visão</a></li>
+        <li><a href="#imagens">Imagens e vídeos</a></li>
+        <li><a href="#exemplo">Exemplo: antes e depois</a></li>
+        <li><a href="#lista">Lista de verificação</a></li>
+      </ol>
+    </nav>
+    <p>Uma receita só funciona se a pessoa conseguir ler, entender e seguir. Muitas receitas na internet dependem de fotos, de cores, de vídeos sem legenda e de frases como “até dourar” ou “ponto de bolo”. Neste texto, usamos recomendações de acessibilidade web, como as <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> e o <abbr title="Modelo de Acessibilidade em Governo Eletrônico">eMAG</abbr>, para mostrar como melhorar isso.</p>
+
+    <h2 id="estrutura">Estrutura da página</h2>
+    <ul>
+      <li><strong>Um título principal por página</strong> (<code>h1</code>), com o nome da receita, e depois seções em ordem: Ingredientes, Modo de preparo e assim por diante. Quem usa leitor de tela pode pular de título em título com a tecla <kbd>H</kbd>.</li>
+      <li><strong>Listas de verdade:</strong> ingredientes em uma lista e passos em uma lista numerada. Isso informa ao leitor de tela quantos itens existem.</li>
+      <li><strong>Resumo no início:</strong> tempo, rendimento, equipamento e alérgenos em uma tabela com cabeçalhos.</li>
+      <li><strong>Links descritivos:</strong> “Ver a receita de arroz branco” em vez de “clique aqui”.</li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="texto">Texto e passos</h2>
+    <ul>
+      <li><strong>Uma ação por passo.</strong> Passos longos escondem erros e cansam quem tem dificuldade de concentração.</li>
+      <li><strong>Medidas por extenso:</strong> “colher de sopa” em vez de “c.s.”, “mililitros” em vez de “ml”, e uma tabela de equivalências.</li>
+      <li><strong>Linguagem simples,</strong> sem regionalismos ou termos técnicos sem explicação, como “refogar” ou “gratinar”. Se usar, explique.</li>
+      <li><strong>Siglas explicadas</strong> na primeira vez que aparecem.</li>
+      <li><strong>Avisos de segurança antes do passo,</strong> e não depois.</li>
+      <li><strong>Alérgenos e restrições</strong> em destaque: glúten, leite, ovo, castanhas e outros.</li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="sinais">Sinais de ponto além da visão</h2>
+    <p>Frases como “até dourar” só servem a quem enxerga. Ofereça sempre mais de um sinal:</p>
+    <ul>
+      <li><strong>Tempo:</strong> “por 8 minutos”.</li>
+      <li><strong>Som:</strong> “até parar de chiar”.</li>
+      <li><strong>Cheiro:</strong> “até sentir o cheiro de pão assado”.</li>
+      <li><strong>Tato:</strong> “até a superfície ficar firme ao toque da colher”.</li>
+    </ul>
+    <p>É o princípio da WCAG de que nenhuma informação seja transmitida só por cor, forma ou som. Cada receita deste site tem uma seção “Como saber que está pronto” com esses sinais.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="imagens">Imagens e vídeos</h2>
+    <ul>
+      <li>Descreva as imagens no atributo <code>alt</code>, de forma curta e objetiva. Imagens apenas decorativas usam <code>alt=""</code>.</li>
+      <li>Não coloque informação importante só dentro da imagem. Se a foto mostra a textura ideal da massa, descreva essa textura no texto.</li>
+      <li>Em vídeos, ofereça legendas, transcrição em texto e, se possível, audiodescrição e janela de Libras.</li>
+      <li>Vídeos e áudios não devem começar sozinhos, e o usuário precisa poder pausar.</li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="exemplo">Exemplo: antes e depois</h2>
+    <h3>Receita pouco acessível</h3>
+    <blockquote>
+      <p>Refogue a cebola até dourar, junte o arroz e cozinhe até ficar no ponto. Clique aqui para ver a foto do ponto.</p>
+    </blockquote>
+    <h3>Receita acessível</h3>
+    <ol>
+      <li>Coloque 1 colher de sopa de óleo na panela e ligue o fogo médio.</li>
+      <li>Acrescente a cebola picada e mexa por 3 minutos, até sentir o cheiro de cebola cozida.</li>
+      <li>Coloque o arroz e mexa por 1 minuto.</li>
+      <li>Acrescente a água fervente. Cozinhe por 18 minutos, ou até o chiado ficar baixo e a água não cobrir mais o arroz.</li>
+    </ol>
+    <p>A versão acessível tem passos numerados, uma ação por passo, tempo, medidas por extenso e sinais que não dependem da visão.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="lista">Lista de verificação</h2>
+    <ul class="marcar">
+      <li><label><input type="checkbox"> A página tem um único título principal e seções em ordem?</label></li>
+      <li><label><input type="checkbox"> Ingredientes e passos estão em listas?</label></li>
+      <li><label><input type="checkbox"> Cada passo tem uma só ação?</label></li>
+      <li><label><input type="checkbox"> As medidas estão por extenso?</label></li>
+      <li><label><input type="checkbox"> Há sinais de ponto por tempo, som, cheiro e tato?</label></li>
+      <li><label><input type="checkbox"> Alérgenos e avisos de segurança aparecem em destaque?</label></li>
+      <li><label><input type="checkbox"> As imagens têm descrição e os vídeos têm legenda e transcrição?</label></li>
+      <li><label><input type="checkbox"> O contraste entre texto e fundo é de pelo menos 4,5:1?</label></li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <p>Cozinha para Todos – projeto acadêmico de desenvolvimento web acessível.</p>
+    <ul>
+      <li><a href="mapa.html">Mapa do site</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="#topo">Voltar ao topo da página</a></li>
+    </ul>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

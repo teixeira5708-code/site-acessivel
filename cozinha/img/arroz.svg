@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <title>Arroz branco</title>
+  <desc>Um prato fundo branco com uma porção de arroz branco solto e um garfo ao lado.</desc>
+  <rect width="600" height="400" fill="#eef2fa"/>
+  <ellipse cx="290" cy="240" rx="200" ry="95" fill="#ffffff" stroke="#5a5a5a" stroke-width="5"/>
+  <ellipse cx="290" cy="240" rx="150" ry="62" fill="#f1f1f1" stroke="#cfcfcf" stroke-width="3"/>
+  <path d="M170 240 q20 -90 120 -95 q100 5 120 95 q-120 40 -240 0 z" fill="#fffdf5" stroke="#cfc9b0" stroke-width="4"/>
+  <g fill="#e8e1c4">
+    <ellipse cx="230" cy="215" rx="10" ry="4" transform="rotate(20 230 215)"/>
+    <ellipse cx="270" cy="195" rx="10" ry="4" transform="rotate(-15 270 195)"/>
+    <ellipse cx="310" cy="205" rx="10" ry="4" transform="rotate(35 310 205)"/>
+    <ellipse cx="350" cy="225" rx="10" ry="4" transform="rotate(-25 350 225)"/>
+    <ellipse cx="290" cy="235" rx="10" ry="4" transform="rotate(10 290 235)"/>
+    <ellipse cx="245" cy="245" rx="10" ry="4" transform="rotate(-35 245 245)"/>
+  </g>
+  <g stroke="#5a5a5a" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M520 130 v150"/><path d="M505 130 v40 a15 15 0 0 0 30 0 v-40"/>
+  </g>
+</svg>

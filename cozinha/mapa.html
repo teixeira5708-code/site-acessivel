@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lista de todas as páginas do site e de suas seções.">
+  <title>Mapa do site – Cozinha para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="topo" class="atalhos" aria-label="Atalhos de teclado">
+    <ul>
+      <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+      <li><a href="#menu" accesskey="2">Ir para o menu [2]</a></li>
+      <li><a href="#rodape" accesskey="3">Ir para o rodapé [3]</a></li>
+      <li><a href="mapa.html" accesskey="4">Mapa do site [4]</a></li>
+      <li><a href="acessibilidade.html" accesskey="5">Acessibilidade neste site [5]</a></li>
+    </ul>
+  </nav>
+
+  <div class="barra-acessibilidade" role="region" aria-label="Ajustes de leitura">
+    <p>Ajustes de leitura:</p>
+    <button type="button" id="btn-diminuir" aria-label="Diminuir tamanho do texto">A−</button>
+    <button type="button" id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+    <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="btn-espaco" aria-pressed="false">Espaçamento ampliado</button>
+    <button type="button" id="btn-restaurar">Restaurar padrão</button>
+    <span id="status-acess" class="so-leitor" role="status" aria-live="polite"></span>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="index.html">Cozinha para Todos</a>
+    <nav id="menu" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li><a href="cozinha-acessivel.html">Cozinha acessível</a></li>
+        <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a></li>
+        <li><a href="contato.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Mapa do site</h1>
+    <p>Veja todas as páginas e as seções de cada uma.</p>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="receitas.html">Receitas</a>
+        <ul>
+          <li><a href="bolo-de-caneca.html">Bolo de caneca de chocolate</a></li>
+          <li><a href="arroz-branco.html">Arroz branco soltinho</a></li>
+          <li><a href="tapioca.html">Tapioca recheada</a></li>
+          <li><a href="receitas.html#medidas">Medidas usadas nas receitas</a></li>
+        </ul>
+      </li>
+      <li><a href="cozinha-acessivel.html">Como tornar a cozinha mais acessível</a>
+        <ul>
+          <li><a href="cozinha-acessivel.html#visual">Cegueira e baixa visão</a></li>
+          <li><a href="cozinha-acessivel.html#motora">Mobilidade reduzida e uso de uma mão</a></li>
+          <li><a href="cozinha-acessivel.html#auditiva">Surdez e perda auditiva</a></li>
+          <li><a href="cozinha-acessivel.html#cognitiva">Dificuldade de concentração ou de memória</a></li>
+          <li><a href="cozinha-acessivel.html#seguranca">Segurança para todos</a></li>
+          <li><a href="cozinha-acessivel.html#recursos">Utensílios e tecnologias assistivas</a></li>
+        </ul>
+      </li>
+      <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a>
+        <ul>
+          <li><a href="receita-acessivel.html#estrutura">Estrutura da página</a></li>
+          <li><a href="receita-acessivel.html#texto">Texto e passos</a></li>
+          <li><a href="receita-acessivel.html#sinais">Sinais de ponto além da visão</a></li>
+          <li><a href="receita-acessivel.html#imagens">Imagens e vídeos</a></li>
+          <li><a href="receita-acessivel.html#lista">Lista de verificação</a></li>
+        </ul>
+      </li>
+      <li><a href="contato.html">Participe</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+    </ul>
+
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <p>Cozinha para Todos – projeto acadêmico de desenvolvimento web acessível.</p>
+    <ul>
+      <li><a href="mapa.html">Mapa do site</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="#topo">Voltar ao topo da página</a></li>
+    </ul>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

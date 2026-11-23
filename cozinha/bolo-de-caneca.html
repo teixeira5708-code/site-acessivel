@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Receita de bolo de caneca de chocolate no micro-ondas, com passos curtos e adaptações de acessibilidade.">
+  <title>Bolo de caneca de chocolate – Cozinha para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="topo" class="atalhos" aria-label="Atalhos de teclado">
+    <ul>
+      <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+      <li><a href="#menu" accesskey="2">Ir para o menu [2]</a></li>
+      <li><a href="#rodape" accesskey="3">Ir para o rodapé [3]</a></li>
+      <li><a href="mapa.html" accesskey="4">Mapa do site [4]</a></li>
+      <li><a href="acessibilidade.html" accesskey="5">Acessibilidade neste site [5]</a></li>
+    </ul>
+  </nav>
+
+  <div class="barra-acessibilidade" role="region" aria-label="Ajustes de leitura">
+    <p>Ajustes de leitura:</p>
+    <button type="button" id="btn-diminuir" aria-label="Diminuir tamanho do texto">A−</button>
+    <button type="button" id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+    <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="btn-espaco" aria-pressed="false">Espaçamento ampliado</button>
+    <button type="button" id="btn-restaurar">Restaurar padrão</button>
+    <span id="status-acess" class="so-leitor" role="status" aria-live="polite"></span>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="index.html">Cozinha para Todos</a>
+    <nav id="menu" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li><a href="cozinha-acessivel.html">Cozinha acessível</a></li>
+        <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a></li>
+        <li><a href="contato.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <nav class="trilha" aria-label="Você está em">
+      <ol>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li aria-current="page">Bolo de caneca de chocolate</li>
+      </ol>
+    </nav>
+    <h1>Bolo de caneca de chocolate</h1>
+    <p>Um bolo individual, feito direto na caneca. Não precisa de forno, batedeira nem de muitas louças, o que ajuda quem tem pouca energia, usa uma mão só ou está começando a cozinhar.</p>
+    <figure>
+      <img src="img/bolo-caneca.svg" alt="Caneca branca com um bolo de chocolate que cresceu acima da borda, sobre um pires.">
+      <figcaption>Ilustração da receita.</figcaption>
+    </figure>
+
+    <div class="tabela-rolavel">
+      <table>
+        <caption>Resumo da receita</caption>
+        <tbody>
+          <tr><th scope="row">Tempo total</th><td>5 minutos</td></tr>
+          <tr><th scope="row">Rendimento</th><td>1 porção</td></tr>
+          <tr><th scope="row">Equipamento</th><td>Micro-ondas, caneca grande (mais de 300 mililitros) que possa ir ao micro-ondas e colher</td></tr>
+          <tr><th scope="row">Contém</th><td>Glúten, ovo e leite</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="ingredientes">Ingredientes</h2>
+    <p>Marque cada item depois de separá-lo. As medidas estão explicadas na página <a href="receitas.html#medidas">medidas usadas nas receitas</a>.</p>
+    <ul class="marcar">
+      <li><label><input type="checkbox"> 4 colheres de sopa de farinha de trigo</label></li>
+      <li><label><input type="checkbox"> 3 colheres de sopa de açúcar</label></li>
+      <li><label><input type="checkbox"> 2 colheres de sopa de chocolate em pó</label></li>
+      <li><label><input type="checkbox"> 1 ovo</label></li>
+      <li><label><input type="checkbox"> 3 colheres de sopa de leite</label></li>
+      <li><label><input type="checkbox"> 2 colheres de sopa de óleo</label></li>
+      <li><label><input type="checkbox"> ½ colher de chá de fermento em pó</label></li>
+    </ul>
+
+    <h2 id="preparo">Modo de preparo</h2>
+    <p>Cada passo tem uma única ação. Siga na ordem.</p>
+    <ol>
+      <li>Separe todos os ingredientes e a caneca em cima da bancada.</li>
+      <li>Na caneca, coloque a farinha, o açúcar, o chocolate em pó e o fermento.</li>
+      <li>Misture com a colher até a mistura ficar com cor uniforme.</li>
+      <li>Acrescente o ovo, o leite e o óleo.</li>
+      <li>Misture bem e raspe o fundo da caneca, até não sobrar pó seco.</li>
+      <li>Leve ao micro-ondas em potência alta por 1 minuto e 30 segundos. Use o cronômetro abaixo.</li>
+      <li>Abra o micro-ondas e toque a superfície com a ponta de uma colher. Se o centro ainda estiver mole, volte por mais 20 segundos.</li>
+      <li>Espere 2 minutos antes de comer. A caneca e o bolo ficam muito quentes.</li>
+    </ol>
+
+    <h2 id="pronto">Como saber que está pronto</h2>
+    <p>Não dependa só da visão. Use também o tempo, o som, o cheiro e o tato.</p>
+    <ul>
+      <li><strong>Tempo:</strong> 1 minuto e 30 segundos é um ponto de partida. Cada micro-ondas tem uma potência, então ajuste na segunda vez que fizer.</li>
+      <li><strong>Tato:</strong> o bolo cresceu até a borda da caneca e a superfície está firme ao toque da ponta de uma colher.</li>
+      <li><strong>Cheiro:</strong> cheiro forte de chocolate assado.</li>
+      <li><strong>Som:</strong> a mistura para de borbulhar e de chiar.</li>
+    </ul>
+
+    <h2 id="cronometro">Cronômetro de apoio</h2>
+    <p>Use este cronômetro para o passo de cozimento no micro-ondas. Ao terminar, o cronômetro mostra uma mensagem na tela, toca um aviso sonoro e vibra em aparelhos que permitem. Para ouvir quanto falta com um leitor de tela, use o botão “Dizer tempo restante”.</p>
+    <div class="timer" role="group" aria-labelledby="cronometro">
+      <div class="campos">
+        <div>
+          <label for="timer-min">Minutos</label>
+          <input type="number" id="timer-min" min="0" max="120" value="1" inputmode="numeric">
+        </div>
+        <div>
+          <label for="timer-seg">Segundos</label>
+          <input type="number" id="timer-seg" min="0" max="59" value="30" inputmode="numeric">
+        </div>
+      </div>
+      <p id="timer-visor" class="visor" role="timer">00:00</p>
+      <div class="botoes">
+        <button type="button" id="timer-iniciar" class="botao">Iniciar</button>
+        <button type="button" id="timer-pausar" class="botao">Pausar</button>
+        <button type="button" id="timer-falar" class="botao">Dizer tempo restante</button>
+        <button type="button" id="timer-zerar" class="botao">Zerar</button>
+      </div>
+      <p><label><input type="checkbox" id="timer-som" checked> Tocar aviso sonoro quando o tempo acabar</label></p>
+      <p id="timer-status" class="aviso-timer" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="destaque">
+      <h2 id="seguranca">Segurança</h2>
+      <ul>
+        <li>Use um pegador ou luva para tirar a caneca. Ela esquenta muito.</li>
+        <li>Não use caneca com detalhes de metal, como borda dourada.</li>
+        <li>Quebre o ovo primeiro em um recipiente à parte e confira se não há pedaços de casca antes de colocar na caneca.</li>
+      </ul>
+    </div>
+
+    <h2 id="adaptacoes">Adaptações de acessibilidade</h2>
+    <ul>
+      <li><strong>Cegueira ou baixa visão:</strong> use colheres medidoras com marcação em relevo e guarde farinha, açúcar e chocolate em potes etiquetados em letra grande ou em Braille. Use o cronômetro desta página e o botão “Dizer tempo restante” para acompanhar o tempo.</li>
+      <li><strong>Surdez ou perda auditiva:</strong> o micro-ondas apita ao terminar, mas o aviso sonoro pode passar despercebido. Use o cronômetro desta página, que mostra a mensagem na tela e vibra no celular.</li>
+      <li><strong>Mobilidade reduzida ou uso de uma só mão:</strong> a receita usa uma única caneca. Apoie a caneca em um pano úmido ou em um suporte antiderrapante para mexer com uma mão. Se for difícil quebrar o ovo, use ovo líquido pasteurizado.</li>
+      <li><strong>Dificuldade de concentração ou de memória:</strong> os passos têm uma ação cada. Deixe os ingredientes marcados na lista conforme os separar.</li>
+    </ul>
+    <p>Quer saber mais? Leia <a href="cozinha-acessivel.html">como tornar a cozinha mais acessível</a>.</p>
+
+    <p><a href="receitas.html">Voltar para a lista de receitas</a></p>
+
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <p>Cozinha para Todos – projeto acadêmico de desenvolvimento web acessível.</p>
+    <ul>
+      <li><a href="mapa.html">Mapa do site</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="#topo">Voltar ao topo da página</a></li>
+    </ul>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Receita de tapioca recheada na frigideira, rápida e sem glúten, com opções doce e salgada e adaptações de acessibilidade.">
+  <title>Tapioca recheada – Cozinha para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="topo" class="atalhos" aria-label="Atalhos de teclado">
+    <ul>
+      <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+      <li><a href="#menu" accesskey="2">Ir para o menu [2]</a></li>
+      <li><a href="#rodape" accesskey="3">Ir para o rodapé [3]</a></li>
+      <li><a href="mapa.html" accesskey="4">Mapa do site [4]</a></li>
+      <li><a href="acessibilidade.html" accesskey="5">Acessibilidade neste site [5]</a></li>
+    </ul>
+  </nav>
+
+  <div class="barra-acessibilidade" role="region" aria-label="Ajustes de leitura">
+    <p>Ajustes de leitura:</p>
+    <button type="button" id="btn-diminuir" aria-label="Diminuir tamanho do texto">A−</button>
+    <button type="button" id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+    <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="btn-espaco" aria-pressed="false">Espaçamento ampliado</button>
+    <button type="button" id="btn-restaurar">Restaurar padrão</button>
+    <span id="status-acess" class="so-leitor" role="status" aria-live="polite"></span>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="index.html">Cozinha para Todos</a>
+    <nav id="menu" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li><a href="cozinha-acessivel.html">Cozinha acessível</a></li>
+        <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a></li>
+        <li><a href="contato.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <nav class="trilha" aria-label="Você está em">
+      <ol>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li aria-current="page">Tapioca recheada</li>
+      </ol>
+    </nav>
+    <h1>Tapioca recheada</h1>
+    <p>Uma receita rápida, de uma só etapa, com opção doce e salgada. Ela não leva glúten e funciona bem para quem quer algo leve e rápido de fazer.</p>
+    <figure>
+      <img src="img/tapioca.svg" alt="Frigideira vista de cima com uma tapioca branca dobrada ao meio e recheio de queijo aparecendo.">
+      <figcaption>Ilustração da receita.</figcaption>
+    </figure>
+
+    <div class="tabela-rolavel">
+      <table>
+        <caption>Resumo da receita</caption>
+        <tbody>
+          <tr><th scope="row">Tempo total</th><td>7 minutos</td></tr>
+          <tr><th scope="row">Rendimento</th><td>1 porção</td></tr>
+          <tr><th scope="row">Equipamento</th><td>Fogão, frigideira antiaderente com cerca de 20 centímetros e espátula</td></tr>
+          <tr><th scope="row">Contém</th><td>Sem glúten. O recheio de queijo contém leite, e o de banana é vegano.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="ingredientes">Ingredientes</h2>
+    <p>Marque cada item depois de separá-lo. As medidas estão explicadas na página <a href="receitas.html#medidas">medidas usadas nas receitas</a>.</p>
+    <ul class="marcar">
+      <li><label><input type="checkbox"> 3 colheres de sopa de goma de tapioca hidratada (vendida pronta)</label></li>
+    </ul>
+    <h3>Recheio salgado</h3>
+    <ul class="marcar">
+      <li><label><input type="checkbox"> 2 fatias de queijo muçarela</label></li>
+    </ul>
+    <h3>Recheio doce</h3>
+    <ul class="marcar">
+      <li><label><input type="checkbox"> 1 banana pequena fatiada</label></li>
+      <li><label><input type="checkbox"> 1 pitada de canela em pó</label></li>
+    </ul>
+
+    <h2 id="preparo">Modo de preparo</h2>
+    <p>Cada passo tem uma única ação. Siga na ordem.</p>
+    <ol>
+      <li>Separe a goma e o recheio escolhido em cima da bancada.</li>
+      <li>Aqueça a frigideira seca em fogo médio por 1 minuto.</li>
+      <li>Espalhe a goma sobre toda a base da frigideira, em uma camada uniforme. Pode usar uma peneira para facilitar.</li>
+      <li>Espere cerca de 1 minuto e 30 segundos, sem mexer. Use o cronômetro abaixo.</li>
+      <li>Quando a goma virar uma massa só e se soltar das bordas, coloque o recheio em uma das metades.</li>
+      <li>Dobre a tapioca ao meio com a espátula.</li>
+      <li>Deixe mais 30 segundos e transfira para um prato.</li>
+    </ol>
+
+    <h2 id="pronto">Como saber que está pronto</h2>
+    <p>Não dependa só da visão. Use também o tempo, o som, o cheiro e o tato.</p>
+    <ul>
+      <li><strong>Tato:</strong> ao balançar levemente a frigideira, a massa se move inteira, como um disco único.</li>
+      <li><strong>Visão:</strong> o pó branco virou uma massa mais compacta e um pouco translúcida.</li>
+      <li><strong>Cheiro:</strong> cheiro suave de goma cozida. Se estiver forte, o fogo está alto demais.</li>
+      <li><strong>Recheio:</strong> o queijo está pronto quando amolece e começa a derreter.</li>
+    </ul>
+
+    <h2 id="cronometro">Cronômetro de apoio</h2>
+    <p>Use este cronômetro para o passo 4, enquanto a goma cozinha. Ao terminar, o cronômetro mostra uma mensagem na tela, toca um aviso sonoro e vibra em aparelhos que permitem. Para ouvir quanto falta com um leitor de tela, use o botão “Dizer tempo restante”.</p>
+    <div class="timer" role="group" aria-labelledby="cronometro">
+      <div class="campos">
+        <div>
+          <label for="timer-min">Minutos</label>
+          <input type="number" id="timer-min" min="0" max="120" value="1" inputmode="numeric">
+        </div>
+        <div>
+          <label for="timer-seg">Segundos</label>
+          <input type="number" id="timer-seg" min="0" max="59" value="30" inputmode="numeric">
+        </div>
+      </div>
+      <p id="timer-visor" class="visor" role="timer">00:00</p>
+      <div class="botoes">
+        <button type="button" id="timer-iniciar" class="botao">Iniciar</button>
+        <button type="button" id="timer-pausar" class="botao">Pausar</button>
+        <button type="button" id="timer-falar" class="botao">Dizer tempo restante</button>
+        <button type="button" id="timer-zerar" class="botao">Zerar</button>
+      </div>
+      <p><label><input type="checkbox" id="timer-som" checked> Tocar aviso sonoro quando o tempo acabar</label></p>
+      <p id="timer-status" class="aviso-timer" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="destaque">
+      <h2 id="seguranca">Segurança</h2>
+      <ul>
+        <li>Mantenha o cabo da frigideira virado para dentro do fogão.</li>
+        <li>A frigideira e a tapioca ficam muito quentes. Use a espátula e não os dedos.</li>
+        <li>Não deixe a frigideira ligada sem ninguém por perto.</li>
+      </ul>
+    </div>
+
+    <h2 id="adaptacoes">Adaptações de acessibilidade</h2>
+    <ul>
+      <li><strong>Cegueira ou baixa visão:</strong> use uma peneira com cabo para espalhar a goma de forma uniforme, confirme o ponto pelo tempo do cronômetro e pelo movimento da massa ao balançar a frigideira, e use sempre a espátula, nunca os dedos.</li>
+      <li><strong>Surdez ou perda auditiva:</strong> o ponto da tapioca é visual e de tato, então o aviso do cronômetro na tela ajuda a controlar o tempo.</li>
+      <li><strong>Mobilidade reduzida ou uso de uma só mão:</strong> use uma frigideira leve e antiderrapante e uma espátula com cabo engrossado. Se for difícil dobrar, sirva a tapioca aberta, com o recheio por cima.</li>
+      <li><strong>Dificuldade de concentração ou de memória:</strong> a receita tem poucos passos e tempos curtos. Marque os ingredientes na lista antes de ligar o fogo.</li>
+    </ul>
+    <p>Quer saber mais? Leia <a href="cozinha-acessivel.html">como tornar a cozinha mais acessível</a>.</p>
+
+    <p><a href="receitas.html">Voltar para a lista de receitas</a></p>
+
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <p>Cozinha para Todos – projeto acadêmico de desenvolvimento web acessível.</p>
+    <ul>
+      <li><a href="mapa.html">Mapa do site</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="#topo">Voltar ao topo da página</a></li>
+    </ul>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

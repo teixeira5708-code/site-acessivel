@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <title>Bolo de caneca</title>
+  <desc>Uma caneca branca com alça, com um bolo de chocolate que cresceu acima da borda, sobre um pires.</desc>
+  <rect width="600" height="400" fill="#fff4cc"/>
+  <ellipse cx="290" cy="330" rx="170" ry="26" fill="#d8d8d8" stroke="#5a5a5a" stroke-width="4"/>
+  <path d="M370 170 h30 a50 50 0 0 1 0 100 h-40" fill="none" stroke="#5a5a5a" stroke-width="16"/>
+  <path d="M190 180 h180 v90 a70 60 0 0 1 -70 60 h-40 a70 60 0 0 1 -70 -60 z" fill="#ffffff" stroke="#5a5a5a" stroke-width="5"/>
+  <path d="M185 182 q10 -70 105 -70 q95 0 105 70 z" fill="#5b3a29"/>
+  <path d="M230 150 q20 -15 40 -2 M300 135 q25 -12 45 2" fill="none" stroke="#7a5139" stroke-width="6" stroke-linecap="round"/>
+  <rect x="180" y="174" width="220" height="16" rx="8" fill="#ffffff" stroke="#5a5a5a" stroke-width="5"/>
+</svg>

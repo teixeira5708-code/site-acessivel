@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Receitas simples e acessíveis, com adaptações para diferentes necessidades e artigos sobre acessibilidade na cozinha.">
+  <title>Início – Cozinha para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="topo" class="atalhos" aria-label="Atalhos de teclado">
+    <ul>
+      <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+      <li><a href="#menu" accesskey="2">Ir para o menu [2]</a></li>
+      <li><a href="#rodape" accesskey="3">Ir para o rodapé [3]</a></li>
+      <li><a href="mapa.html" accesskey="4">Mapa do site [4]</a></li>
+      <li><a href="acessibilidade.html" accesskey="5">Acessibilidade neste site [5]</a></li>
+    </ul>
+  </nav>
+
+  <div class="barra-acessibilidade" role="region" aria-label="Ajustes de leitura">
+    <p>Ajustes de leitura:</p>
+    <button type="button" id="btn-diminuir" aria-label="Diminuir tamanho do texto">A−</button>
+    <button type="button" id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+    <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="btn-espaco" aria-pressed="false">Espaçamento ampliado</button>
+    <button type="button" id="btn-restaurar">Restaurar padrão</button>
+    <span id="status-acess" class="so-leitor" role="status" aria-live="polite"></span>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="index.html">Cozinha para Todos</a>
+    <nav id="menu" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li><a href="cozinha-acessivel.html">Cozinha acessível</a></li>
+        <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a></li>
+        <li><a href="contato.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <div class="hero">
+      <div>
+        <h1>Receitas que cabem na vida de todo mundo</h1>
+        <p>Cozinhar é uma atividade do dia a dia, e a acessibilidade também precisa estar lá. Aqui você encontra receitas com poucos passos, escritas em linguagem clara e com adaptações para pessoas cegas, com baixa visão, surdas, com mobilidade reduzida ou com dificuldade de concentração.</p>
+        <p>O site também foi construído para ser acessível: funciona só com o teclado, tem alto contraste e um cronômetro que avisa por som, por texto e por vibração.</p>
+        <p><a class="botao" href="receitas.html">Ver as receitas</a></p>
+      </div>
+      <img src="img/mesa.svg" alt="Ilustração de uma mesa com uma tigela de frutas, uma colher de pau e uma panela com tampa.">
+    </div>
+
+    <h2>Receitas em destaque</h2>
+    <ul class="cartoes">
+      <li>
+        <img src="img/bolo-caneca.svg" alt="">
+        <h3><a href="bolo-de-caneca.html">Bolo de caneca de chocolate</a></h3>
+        <p>Pronto em 5 minutos, no micro-ondas e em uma única caneca.</p>
+      </li>
+      <li>
+        <img src="img/arroz.svg" alt="">
+        <h3><a href="arroz-branco.html">Arroz branco soltinho</a></h3>
+        <p>O básico do dia a dia, com sinais de ponto que não dependem da visão.</p>
+      </li>
+      <li>
+        <img src="img/tapioca.svg" alt="">
+        <h3><a href="tapioca.html">Tapioca recheada</a></h3>
+        <p>Rápida, sem glúten e com recheio doce ou salgado.</p>
+      </li>
+    </ul>
+
+    <h2>Aprenda sobre acessibilidade na cozinha</h2>
+    <ul>
+      <li><a href="cozinha-acessivel.html">Como tornar a cozinha mais acessível</a>: espaço, utensílios e segurança para cada necessidade.</li>
+      <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a>: o que muda quando a receita é pensada para todos.</li>
+    </ul>
+
+    <h2>Como usar este site</h2>
+    <ul>
+      <li>Navegue só com o teclado: <kbd>Tab</kbd> avança, <kbd>Shift</kbd> + <kbd>Tab</kbd> volta e <kbd>Enter</kbd> ativa links e botões.</li>
+      <li>No topo de cada página há atalhos para o conteúdo, o menu e o rodapé. Veja as teclas em <a href="acessibilidade.html#atalhos">atalhos de teclado deste site</a>.</li>
+      <li>Na barra de ajustes, aumente o texto, ative o alto contraste ou o espaçamento ampliado. O navegador guarda suas escolhas.</li>
+      <li>O botão do VLibras, no canto da tela, traduz o conteúdo para <abbr title="Língua Brasileira de Sinais">Libras</abbr>. Ele precisa de internet.</li>
+      <li>Para ver todas as páginas, use o <a href="mapa.html">mapa do site</a>.</li>
+    </ul>
+
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <p>Cozinha para Todos – projeto acadêmico de desenvolvimento web acessível.</p>
+    <ul>
+      <li><a href="mapa.html">Mapa do site</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="#topo">Voltar ao topo da página</a></li>
+    </ul>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

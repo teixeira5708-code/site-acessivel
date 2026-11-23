@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Receita de arroz branco soltinho no fogão, com sinais de ponto pelo som e pelo tato e adaptações de acessibilidade.">
+  <title>Arroz branco soltinho – Cozinha para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="topo" class="atalhos" aria-label="Atalhos de teclado">
+    <ul>
+      <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+      <li><a href="#menu" accesskey="2">Ir para o menu [2]</a></li>
+      <li><a href="#rodape" accesskey="3">Ir para o rodapé [3]</a></li>
+      <li><a href="mapa.html" accesskey="4">Mapa do site [4]</a></li>
+      <li><a href="acessibilidade.html" accesskey="5">Acessibilidade neste site [5]</a></li>
+    </ul>
+  </nav>
+
+  <div class="barra-acessibilidade" role="region" aria-label="Ajustes de leitura">
+    <p>Ajustes de leitura:</p>
+    <button type="button" id="btn-diminuir" aria-label="Diminuir tamanho do texto">A−</button>
+    <button type="button" id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+    <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="btn-espaco" aria-pressed="false">Espaçamento ampliado</button>
+    <button type="button" id="btn-restaurar">Restaurar padrão</button>
+    <span id="status-acess" class="so-leitor" role="status" aria-live="polite"></span>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="index.html">Cozinha para Todos</a>
+    <nav id="menu" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li><a href="cozinha-acessivel.html">Cozinha acessível</a></li>
+        <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a></li>
+        <li><a href="contato.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <nav class="trilha" aria-label="Você está em">
+      <ol>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li aria-current="page">Arroz branco soltinho</li>
+      </ol>
+    </nav>
+    <h1>Arroz branco soltinho</h1>
+    <p>O arroz do dia a dia, em uma panela só. A receita traz sinais de ponto que usam som, cheiro e tato, para que ninguém precise depender de olhar dentro da panela.</p>
+    <figure>
+      <img src="img/arroz.svg" alt="Prato fundo branco com uma porção de arroz branco solto e um garfo ao lado.">
+      <figcaption>Ilustração da receita.</figcaption>
+    </figure>
+
+    <div class="tabela-rolavel">
+      <table>
+        <caption>Resumo da receita</caption>
+        <tbody>
+          <tr><th scope="row">Tempo total</th><td>35 minutos</td></tr>
+          <tr><th scope="row">Rendimento</th><td>3 a 4 porções</td></tr>
+          <tr><th scope="row">Equipamento</th><td>Fogão, panela média com tampa e colher</td></tr>
+          <tr><th scope="row">Contém</th><td>Não contém glúten, ovo nem leite. É uma receita vegana.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="ingredientes">Ingredientes</h2>
+    <p>Marque cada item depois de separá-lo. As medidas estão explicadas na página <a href="receitas.html#medidas">medidas usadas nas receitas</a>.</p>
+    <ul class="marcar">
+      <li><label><input type="checkbox"> 1 xícara de arroz branco agulhinha</label></li>
+      <li><label><input type="checkbox"> 2 xícaras de água</label></li>
+      <li><label><input type="checkbox"> 1 colher de sopa de óleo</label></li>
+      <li><label><input type="checkbox"> 1 dente de alho picado</label></li>
+      <li><label><input type="checkbox"> 1 colher de chá de sal</label></li>
+    </ul>
+
+    <h2 id="preparo">Modo de preparo</h2>
+    <p>Cada passo tem uma única ação. Siga na ordem.</p>
+    <ol>
+      <li>Meça 2 xícaras de água fria e ferva em uma chaleira ou em outra panela. Deixe-a pronta para o passo 5.</li>
+      <li>Coloque o óleo na panela e ligue o fogo médio.</li>
+      <li>Quando o óleo esquentar, acrescente o alho e mexa por 30 segundos, até sentir o cheiro.</li>
+      <li>Coloque o arroz e mexa por 1 minuto, para os grãos ficarem soltos.</li>
+      <li>Acrescente a água fervente e o sal com cuidado, mantendo o rosto afastado do vapor.</li>
+      <li>Mexa uma vez e espere ferver. Deixe a panela semitampada, com a tampa levemente aberta.</li>
+      <li>Quando o som de borbulhas ficar baixo e a água não cobrir mais o arroz, cerca de 10 minutos depois, baixe o fogo ao mínimo.</li>
+      <li>Tampe totalmente a panela e cozinhe por 10 minutos. Use o cronômetro abaixo.</li>
+      <li>Desligue o fogo e deixe a panela tampada por 5 minutos.</li>
+      <li>Solte o arroz com um garfo e sirva.</li>
+    </ol>
+
+    <h2 id="pronto">Como saber que está pronto</h2>
+    <p>Não dependa só da visão. Use também o tempo, o som, o cheiro e o tato.</p>
+    <ul>
+      <li><strong>Som:</strong> no passo 7, o barulho forte de fervura dá lugar a um chiado baixo.</li>
+      <li><strong>Tato e visão:</strong> ao inclinar a panela levemente, não escorre mais água. Pequenos buracos aparecem na superfície do arroz.</li>
+      <li><strong>Cheiro:</strong> cheiro de arroz cozido. Se sentir cheiro de queimado, desligue o fogo na hora.</li>
+      <li><strong>Prova:</strong> pegue uma pequena porção com a colher e deixe esfriar. Os grãos devem estar macios e soltos.</li>
+    </ul>
+
+    <h2 id="cronometro">Cronômetro de apoio</h2>
+    <p>Use este cronômetro para o passo 8, com a panela totalmente tampada. Ao terminar, o cronômetro mostra uma mensagem na tela, toca um aviso sonoro e vibra em aparelhos que permitem. Para ouvir quanto falta com um leitor de tela, use o botão “Dizer tempo restante”.</p>
+    <div class="timer" role="group" aria-labelledby="cronometro">
+      <div class="campos">
+        <div>
+          <label for="timer-min">Minutos</label>
+          <input type="number" id="timer-min" min="0" max="120" value="10" inputmode="numeric">
+        </div>
+        <div>
+          <label for="timer-seg">Segundos</label>
+          <input type="number" id="timer-seg" min="0" max="59" value="0" inputmode="numeric">
+        </div>
+      </div>
+      <p id="timer-visor" class="visor" role="timer">00:00</p>
+      <div class="botoes">
+        <button type="button" id="timer-iniciar" class="botao">Iniciar</button>
+        <button type="button" id="timer-pausar" class="botao">Pausar</button>
+        <button type="button" id="timer-falar" class="botao">Dizer tempo restante</button>
+        <button type="button" id="timer-zerar" class="botao">Zerar</button>
+      </div>
+      <p><label><input type="checkbox" id="timer-som" checked> Tocar aviso sonoro quando o tempo acabar</label></p>
+      <p id="timer-status" class="aviso-timer" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="destaque">
+      <h2 id="seguranca">Segurança</h2>
+      <ul>
+        <li>Mantenha o cabo da panela virado para dentro do fogão e fora do alcance de crianças.</li>
+        <li>Ao abrir a tampa, levante primeiro o lado mais distante do rosto, para o vapor não queimar.</li>
+        <li>Use luvas ou panos secos para segurar a panela. Pano molhado conduz calor.</li>
+        <li>Antes de sair da cozinha, confirme que o fogo está desligado.</li>
+      </ul>
+    </div>
+
+    <h2 id="adaptacoes">Adaptações de acessibilidade</h2>
+    <ul>
+      <li><strong>Cegueira ou baixa visão:</strong> marque no fogão o ponto de fogo médio e o mínimo com adesivo em relevo. Meça a água ainda fria, com a ponta do dedo apoiada na borda da xícara para saber quando está cheia, e só depois a ferva.</li>
+      <li><strong>Surdez ou perda auditiva:</strong> como o ponto depende do som da fervura, use o tempo do cronômetro e o sinal visual de que a água secou. O cronômetro desta página mostra o aviso na tela.</li>
+      <li><strong>Mobilidade reduzida:</strong> uma panela elétrica de arroz dispensa o fogão: coloque os ingredientes, ligue e ela desliga sozinha. Prefira panelas leves, com duas alças.</li>
+      <li><strong>Dificuldade de concentração ou de memória:</strong> use a lista de ingredientes com caixas de marcar e dê o passo 5 só depois que a água estiver fervendo. Anote em um papel o tempo do passo 8.</li>
+    </ul>
+    <p>Quer saber mais? Leia <a href="cozinha-acessivel.html">como tornar a cozinha mais acessível</a>.</p>
+
+    <p><a href="receitas.html">Voltar para a lista de receitas</a></p>
+
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <p>Cozinha para Todos – projeto acadêmico de desenvolvimento web acessível.</p>
+    <ul>
+      <li><a href="mapa.html">Mapa do site</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="#topo">Voltar ao topo da página</a></li>
+    </ul>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

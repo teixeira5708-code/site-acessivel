@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Como adaptar espaço, utensílios e rotina da cozinha para pessoas com diferentes necessidades.">
+  <title>Cozinha acessível – Cozinha para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="topo" class="atalhos" aria-label="Atalhos de teclado">
+    <ul>
+      <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+      <li><a href="#menu" accesskey="2">Ir para o menu [2]</a></li>
+      <li><a href="#rodape" accesskey="3">Ir para o rodapé [3]</a></li>
+      <li><a href="mapa.html" accesskey="4">Mapa do site [4]</a></li>
+      <li><a href="acessibilidade.html" accesskey="5">Acessibilidade neste site [5]</a></li>
+    </ul>
+  </nav>
+
+  <div class="barra-acessibilidade" role="region" aria-label="Ajustes de leitura">
+    <p>Ajustes de leitura:</p>
+    <button type="button" id="btn-diminuir" aria-label="Diminuir tamanho do texto">A−</button>
+    <button type="button" id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+    <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="btn-espaco" aria-pressed="false">Espaçamento ampliado</button>
+    <button type="button" id="btn-restaurar">Restaurar padrão</button>
+    <span id="status-acess" class="so-leitor" role="status" aria-live="polite"></span>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="index.html">Cozinha para Todos</a>
+    <nav id="menu" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html">Receitas</a></li>
+        <li><a href="cozinha-acessivel.html" aria-current="page">Cozinha acessível</a></li>
+        <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a></li>
+        <li><a href="contato.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Como tornar a cozinha mais acessível</h1>
+    <nav id="sumario" class="sumario" aria-labelledby="sumario-titulo">
+      <h2 id="sumario-titulo">Sumário</h2>
+      <ol>
+        <li><a href="#visual">Cegueira e baixa visão</a></li>
+        <li><a href="#motora">Mobilidade reduzida e uso de uma mão</a></li>
+        <li><a href="#auditiva">Surdez e perda auditiva</a></li>
+        <li><a href="#cognitiva">Dificuldade de concentração ou de memória</a></li>
+        <li><a href="#seguranca">Segurança para todos</a></li>
+        <li><a href="#recursos">Utensílios e tecnologias assistivas</a></li>
+      </ol>
+    </nav>
+    <p>A cozinha é um dos lugares da casa com mais riscos e mais barreiras: fogo, panelas quentes, facas e muita coisa pequena para ler e organizar. Adaptá-la dá autonomia a pessoas com deficiência e também ajuda idosos, crianças e quem está com a mobilidade reduzida por pouco tempo.</p>
+    <p>Esse é um exemplo do <em>desenho universal</em>: o que é pensado para uma pessoa acaba facilitando a vida de todas as outras.</p>
+
+    <h2 id="visual">Cegueira e baixa visão</h2>
+    <ul>
+      <li>Guarde cada item sempre no mesmo lugar e peça para outras pessoas respeitarem essa ordem.</li>
+      <li>Etiquete potes e embalagens com letras grandes, em alto contraste, ou com Braille ou marcações em relevo.</li>
+      <li>Use utensílios e tábuas em cores que contrastem com os alimentos, como tábua escura para alimentos claros.</li>
+      <li>Use copos e colheres medidoras com marcações em relevo, e uma bandeja ou tábua com borda para conter o que cair.</li>
+      <li>Garanta boa iluminação sobre a bancada e o fogão, sem reflexos.</li>
+      <li>Marque no fogão os pontos de fogo com adesivos em relevo.</li>
+      <li>Para saber se está pronto, use o som, o cheiro e o tato, além da visão.</li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="motora">Mobilidade reduzida e uso de uma mão</h2>
+    <ul>
+      <li>Deixe os itens de uso diário em alturas fáceis de alcançar, sem precisar se esticar ou abaixar muito.</li>
+      <li>Se usa cadeira de rodas, verifique se há espaço livre embaixo da pia e da bancada e área para manobrar.</li>
+      <li>Prefira panelas leves, com duas alças e fundo antiaderente. A panela elétrica e o micro-ondas reduzem a necessidade de carregar peso.</li>
+      <li>Use tapetes antiderrapantes ou panos úmidos sob tigelas para fixar o recipiente com uma mão.</li>
+      <li>Use utensílios com cabo engrossado e abridores adaptados.</li>
+      <li>Para fadiga, divida o preparo em etapas e deixe os ingredientes separados antes de começar.</li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="auditiva">Surdez e perda auditiva</h2>
+    <ul>
+      <li>Use cronômetros com sinal luminoso ou vibratório, como o desta página.</li>
+      <li>Escolha um alarme de fumaça com luz e vibração.</li>
+      <li>Se mais de uma pessoa cozinha, combine sinais visuais, como acender e apagar a luz, para chamar a atenção.</li>
+      <li>Em receitas em vídeo, procure as que têm legenda ou janela de <abbr title="Língua Brasileira de Sinais">Libras</abbr> e transcrição em texto.</li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="cognitiva">Dificuldade de concentração ou de memória</h2>
+    <ul>
+      <li>Prefira receitas com poucos passos, com uma ação por passo e linguagem simples.</li>
+      <li>Separe todos os ingredientes antes de começar e marque cada um em uma lista.</li>
+      <li>Use cronômetros e lembretes para as etapas com tempo.</li>
+      <li>Fotos ou desenhos de cada etapa ajudam, desde que haja também texto.</li>
+      <li>Evite interrupções: desligue a televisão e deixe a cozinha organizada.</li>
+    </ul>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="seguranca">Segurança para todos</h2>
+    <div class="destaque">
+      <h3>Regras que valem para qualquer pessoa</h3>
+      <ul>
+        <li>Cabos de panelas sempre virados para dentro do fogão.</li>
+        <li>Luvas ou panos secos para segurar panelas quentes.</li>
+        <li>Nunca deixe o fogo ligado sem ninguém por perto.</li>
+        <li>Mantenha um extintor ou um pano úmido grande ao alcance, e saiba onde fica o registro do gás.</li>
+        <li>Use facas bem afiadas em tábuas firmes e corte sempre com os dedos recolhidos.</li>
+      </ul>
+    </div>
+    <p>Essas orientações são gerais. Pessoas com necessidades específicas podem se beneficiar de avaliação de um terapeuta ocupacional para adaptar a cozinha.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+    <h2 id="recursos">Utensílios e tecnologias assistivas</h2>
+    <div class="tabela-rolavel">
+      <table>
+        <caption>Exemplos de recursos para a cozinha</caption>
+        <thead>
+          <tr><th scope="col">Recurso</th><th scope="col">Quem pode se beneficiar</th><th scope="col">Como ajuda</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Colheres e copos medidores com relevo</th><td>Pessoas cegas ou com baixa visão</td><td>Permitem medir pelo tato.</td></tr>
+          <tr><th scope="row">Etiquetas em Braille ou em letras grandes</th><td>Pessoas cegas ou com baixa visão</td><td>Identificam potes e embalagens.</td></tr>
+          <tr><th scope="row">Cronômetro com vibração ou luz</th><td>Pessoas surdas ou com perda auditiva</td><td>Avisa o fim do tempo sem depender do som.</td></tr>
+          <tr><th scope="row">Cronômetro falante</th><td>Pessoas cegas</td><td>Informa o tempo restante em voz.</td></tr>
+          <tr><th scope="row">Utensílios com cabo engrossado</th><td>Pessoas com pouca força nas mãos ou artrite</td><td>Facilitam a pegada.</td></tr>
+          <tr><th scope="row">Tábua com fixador</th><td>Pessoas que usam uma mão</td><td>Mantém o alimento firme durante o corte.</td></tr>
+          <tr><th scope="row">Panela elétrica de arroz e micro-ondas</th><td>Pessoas com mobilidade reduzida ou fadiga</td><td>Dispensam o fogão e reduzem o esforço.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Para mais exemplos de recursos digitais, veja o <a href="acessibilidade.html#recursos">cronômetro e os ajustes de leitura deste site</a>.</p>
+    <p class="voltar"><a href="#sumario">Voltar ao sumário</a></p>
+
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <p>Cozinha para Todos – projeto acadêmico de desenvolvimento web acessível.</p>
+    <ul>
+      <li><a href="mapa.html">Mapa do site</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="#topo">Voltar ao topo da página</a></li>
+    </ul>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

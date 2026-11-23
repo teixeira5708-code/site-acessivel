@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <title>Tapioca recheada</title>
+  <desc>Uma frigideira preta vista de cima com uma tapioca dobrada ao meio, branca, com recheio de queijo aparecendo.</desc>
+  <rect width="600" height="400" fill="#fff0d9"/>
+  <rect x="440" y="185" width="150" height="26" rx="13" fill="#2b2b2b"/>
+  <circle cx="270" cy="198" r="165" fill="#2b2b2b"/>
+  <circle cx="270" cy="198" r="140" fill="#3a3a3a"/>
+  <path d="M130 198 a140 140 0 0 1 280 0 z" fill="#f4ecd8" stroke="#d6c9a5" stroke-width="5"/>
+  <path d="M150 198 h240 q-20 30 -120 30 q-100 0 -120 -30 z" fill="#f7d86b" stroke="#d6b73a" stroke-width="4"/>
+  <path d="M130 198 h280" stroke="#d6c9a5" stroke-width="6"/>
+</svg>

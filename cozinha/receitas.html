@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lista de receitas acessíveis com tempo de preparo, equipamento e informações sobre ingredientes.">
+  <title>Receitas – Cozinha para Todos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav id="topo" class="atalhos" aria-label="Atalhos de teclado">
+    <ul>
+      <li><a href="#conteudo" accesskey="1">Ir para o conteúdo [1]</a></li>
+      <li><a href="#menu" accesskey="2">Ir para o menu [2]</a></li>
+      <li><a href="#rodape" accesskey="3">Ir para o rodapé [3]</a></li>
+      <li><a href="mapa.html" accesskey="4">Mapa do site [4]</a></li>
+      <li><a href="acessibilidade.html" accesskey="5">Acessibilidade neste site [5]</a></li>
+    </ul>
+  </nav>
+
+  <div class="barra-acessibilidade" role="region" aria-label="Ajustes de leitura">
+    <p>Ajustes de leitura:</p>
+    <button type="button" id="btn-diminuir" aria-label="Diminuir tamanho do texto">A−</button>
+    <button type="button" id="btn-aumentar" aria-label="Aumentar tamanho do texto">A+</button>
+    <button type="button" id="btn-contraste" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="btn-espaco" aria-pressed="false">Espaçamento ampliado</button>
+    <button type="button" id="btn-restaurar">Restaurar padrão</button>
+    <span id="status-acess" class="so-leitor" role="status" aria-live="polite"></span>
+  </div>
+
+  <header class="cabecalho">
+    <a class="marca" href="index.html">Cozinha para Todos</a>
+    <nav id="menu" aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas.html" aria-current="page">Receitas</a></li>
+        <li><a href="cozinha-acessivel.html">Cozinha acessível</a></li>
+        <li><a href="receita-acessivel.html">Como escrever receitas acessíveis</a></li>
+        <li><a href="contato.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Receitas</h1>
+    <p>Todas as receitas seguem o mesmo formato: resumo, ingredientes com caixas de marcar, passos curtos, sinais para saber se está pronto, dicas de segurança e adaptações de acessibilidade.</p>
+
+    <ul class="cartoes">
+      <li>
+        <img src="img/bolo-caneca.svg" alt="">
+        <h2><a href="bolo-de-caneca.html">Bolo de caneca de chocolate</a></h2>
+        <p>Para uma porção. Micro-ondas, sem forno e com poucas louças.</p>
+      </li>
+      <li>
+        <img src="img/arroz.svg" alt="">
+        <h2><a href="arroz-branco.html">Arroz branco soltinho</a></h2>
+        <p>Para três a quatro porções. Panela no fogão, com dicas de som e de tato.</p>
+      </li>
+      <li>
+        <img src="img/tapioca.svg" alt="">
+        <h2><a href="tapioca.html">Tapioca recheada</a></h2>
+        <p>Para uma porção. Frigideira, rápida e sem glúten.</p>
+      </li>
+    </ul>
+
+    <h2>Comparação rápida</h2>
+    <div class="tabela-rolavel">
+      <table>
+        <caption>Comparação entre as receitas</caption>
+        <thead>
+          <tr><th scope="col">Receita</th><th scope="col">Tempo total</th><th scope="col">Equipamento</th><th scope="col">Contém glúten</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row"><a href="bolo-de-caneca.html">Bolo de caneca de chocolate</a></th><td>5 minutos</td><td>Micro-ondas</td><td>Sim</td></tr>
+          <tr><th scope="row"><a href="arroz-branco.html">Arroz branco soltinho</a></th><td>35 minutos</td><td>Fogão</td><td>Não</td></tr>
+          <tr><th scope="row"><a href="tapioca.html">Tapioca recheada</a></th><td>7 minutos</td><td>Fogão</td><td>Não</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Confira sempre o rótulo dos produtos: marcas diferentes podem conter traços de alérgenos.</p>
+
+    <h2 id="medidas">Medidas usadas nas receitas</h2>
+    <p>As receitas usam medidas caseiras, escritas por extenso para facilitar a leitura por leitores de tela.</p>
+    <div class="tabela-rolavel">
+      <table>
+        <caption>Equivalência das medidas caseiras</caption>
+        <thead>
+          <tr><th scope="col">Medida</th><th scope="col">Equivale a</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">1 xícara</th><td>240 mililitros</td></tr>
+          <tr><th scope="row">1 colher de sopa</th><td>15 mililitros</td></tr>
+          <tr><th scope="row">1 colher de chá</th><td>5 mililitros</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Use copos e colheres medidoras. Elas costumam ter marcações em relevo, o que ajuda pessoas cegas ou com baixa visão.</p>
+
+  </main>
+
+  <footer id="rodape" class="rodape">
+    <p>Cozinha para Todos – projeto acadêmico de desenvolvimento web acessível.</p>
+    <ul>
+      <li><a href="mapa.html">Mapa do site</a></li>
+      <li><a href="acessibilidade.html">Acessibilidade neste site</a></li>
+      <li><a href="contato.html">Fale conosco</a></li>
+      <li><a href="#topo">Voltar ao topo da página</a></li>
+    </ul>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper><div class="vw-plugin-top-wrapper"></div></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
